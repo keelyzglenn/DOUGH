@@ -1,22 +1,15 @@
 // backend
 function Order() {
   this.feeds = 0;
-  // this.toppingCount = 0;
-  // this.priceTopping = 0;
+  this.topping = 0;
   this.total = 0;
 }
 
-
-//
-// $("input:checkbox[name=top]:checked").each(function() {
-//   var toppingType = parseInt($(this).val());
-//   toppingCount++;
-// });
-
 var pizza = new Order();
-//
-Order.prototype.priceFeed = function() {
+var toppingCount = 0;
+
 // size
+Order.prototype.priceFeed = function() {
   var priceSize = 1;
 
   if(this.feeds === 1) {
@@ -33,42 +26,47 @@ Order.prototype.priceFeed = function() {
   if (this.feeds === 4) {
     priceSize += 4;
   };
+
   return priceSize;
 };
+
+
+// toppings
+Order.prototype.priceTop = function () {
+  var priceTopping = 0;
+  if (this.topping <= 2) {
+    priceTopping += 1;
+  };
+  if (this.topping >= 3) {
+    priceTopping += 2;
+  };
+  return priceTopping;
+};
+
+//
+// Order.prototype.priceAll = function () {
+//   total += priceSize + priceTopping;
+// };
 //
 // Order.prototype.clearPrice = function () {
 //   this.feeds = 0;
 //   this.priceSize = 0;
 // }
 //
-// Order.prototype.priceTop = function () {
-// // toppings
-//   if (this.toppingCount <= 2) {
-//     priceTopping += 1;
-//   } else {
-//     priceTopping += 2;
-//   }
-// };
-//
-// Order.prototype.priceAll = function () {
-//   total += priceSize + priceTopping;
-// };
-
 // frontend
 $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
 
     pizza.feeds = parseInt($("input:radio[name=size]:checked").val());
+    pizza.toppings = $("input:checkbox[name=top]:checked").each(function() {
+     var toppingType = $(this).val();
+     toppingCount++;
+   });
 
-
-  $("#sizes").text(pizza.feeds);
-  $("#toppings").text(pizza.priceFeed());
-
+  $("#sizes").text(pizza.priceFeed());
+  $("#toppings").text(pizza.priceTop());
   });
 });
-
-
-
 
 //
