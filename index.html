@@ -11,13 +11,18 @@
     <div class="container">
 <!-- heading -->
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2 sidebar">
         <h1>DOUGH.</h1>
+        <p>HOME</p>
+        <p>ABOUT US</p>
+        <p>ORDER</p>
+        <p>CONTACT</p>
       </div>
 
       <div class="col-md-10 order">
       <form id="form">
         <div class="form-group order-form">
+          <h2>Place an Order Online:</h2>
 <!-- size -->
           <div id="size" class="text">
             <h3>Feeds</h3>
@@ -52,16 +57,19 @@
           </div>
 
 <!-- button -->
-        <button type="submit" id="order" class="button btn-primary">Get it Started</button>
+        <button type="submit" id="order" class="button btn-default">Get it Started</button>
         </div>
       </form>
 
 <!-- Order Details -->
       <div class="result">
-        <h3> Your total price for this order is:</h3>
+        <div id="text">
+        <h4> Your total price for this order is:</h4>
         <p id="orderResult"></p>
+        </div>
+        <button type="button" class="button btn-default">Start New Order</button>
       </div>
-      
+
     </div>
     </div>
   </body>
