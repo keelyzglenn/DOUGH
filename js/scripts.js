@@ -2,7 +2,6 @@
 function Order() {
   this.feeds = 0;
   // this.toppingCount = 0;
-  this.priceSize = 1;
   // this.priceTopping = 0;
   this.total = 0;
 }
@@ -18,20 +17,29 @@ var pizza = new Order();
 //
 Order.prototype.priceFeed = function() {
 // size
-  if(this.feeds === 1) {
-    this.priceSize =+ 1;
-  }
-  if (this.feeds === 2) {
-    this.priceSize =+ 2;
-  }
-  if (this.feeds === 3) {
-    this.priceSize =+ 3;
-  }
-  if (this.feeds === 4) {
-    this.priceSize =+ 4;
-  }
-};
+  var priceSize = 1;
 
+  if(this.feeds === 1) {
+    priceSize += 1;
+  };
+  if (this.feeds === 2) {
+    priceSize += 2;
+  };
+
+  if (this.feeds === 3) {
+    priceSize += 3;
+  };
+
+  if (this.feeds === 4) {
+    priceSize += 4;
+  };
+  return priceSize;
+};
+//
+// Order.prototype.clearPrice = function () {
+//   this.feeds = 0;
+//   this.priceSize = 0;
+// }
 //
 // Order.prototype.priceTop = function () {
 // // toppings
@@ -52,11 +60,10 @@ $(document).ready(function() {
     event.preventDefault();
 
     pizza.feeds = parseInt($("input:radio[name=size]:checked").val());
-    pizza.priceFeed();
 
 
   $("#sizes").text(pizza.feeds);
-  $("#toppings").text(pizza.priceSize);
+  $("#toppings").text(pizza.priceFeed());
 
   });
 });
