@@ -55,6 +55,24 @@ Order.prototype.totalPrice = function () {
 
 // frontend
 $(document).ready(function() {
+  $(".continue").click(function() {
+    $(".imageOne").fadeOut(function() {
+      $(".imageTwo").fadeIn();
+    });
+  });
+  $(".continueOne").click(function() {
+    $(".imageTwo").fadeOut(function() {
+      $(".imageThree").fadeIn();
+    });
+  });
+  $(".continueTwo").click(function() {
+    $(".imageThree").fadeOut(function() {
+      $(".imageOne").fadeIn();
+    });
+  });
+
+
+  // online order
   $("#form").submit(function(event) {
     event.preventDefault();
     var inputtedName = $("input#fullName").val();

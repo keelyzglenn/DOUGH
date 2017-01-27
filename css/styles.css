@@ -1,21 +1,56 @@
-.row {
-  margin: 10px;
+/*ALLPAGES*/
+.container {
+  margin: 20px;
 }
-
 /*icon*/
 .wide-range {
-  height: 30%;
-  width: 30%;
-  margin-left: 50px;
+  height: 50%;
+  width: 50%;
+  margin-left: 25px;
 }
 /*sidebar*/
 .sidebar h1 {
-  text-align: center;
+  /*text-align: center;*/
 }
 .sidebar p {
   text-align: left;
   margin-top: 30px;
 }
+
+.sidebar a {
+  color: black;
+}
+
+/*index*/
+.imageOne {
+  background-image: url("../img/one.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 550px;
+}
+
+.imageTwo {
+  display: none;
+  background-image: url("../img/second.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 550px;
+}
+
+.imageThree {
+  display: none;
+  background-image: url("../img/four.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 550px;
+}
+
 
 /*ORDER ONLINE*/
 .order {
@@ -36,16 +71,7 @@
   margin-top: 60px;
   margin-left: 40px;
   margin-right: 40px;
-}
-
-.order-form h3 {
-  text-align: left;
-}
-
-.button {
-  margin-top: 50px;
-  margin-left: 500px;
-  font-size: 15px;
+  border-radius: 2%;
 }
 
 .result {
@@ -58,7 +84,18 @@
   margin-top: 60px;
   margin-left: 40px;
   margin-right: 40px;
+  border-radius: 2%;
 }
+.order-form h3 {
+  text-align: left;
+}
+
+.button {
+  margin-top: 50px;
+  margin-left: 500px;
+  font-size: 15px;
+}
+
 
 .deliveryInfo {
   margin-top: 40px;
