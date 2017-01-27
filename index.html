@@ -10,15 +10,17 @@
   <body>
     <div class="container">
 <!-- heading -->
-      <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-2">
         <h1>DOUGH.</h1>
       </div>
 
+      <div class="col-md-10 order">
       <form id="form">
-        <div class="form-group">
+        <div class="form-group order-form">
 <!-- size -->
-          <div id="size">
-            <h2>Feeds:</h2>
+          <div id="size" class="text">
+            <h3>Feeds</h3>
              <label class="radio-inline">
                <input type="radio" name="size" value="1">2-4
              </label>
@@ -34,34 +36,32 @@
            </div>
 <!-- toppings -->
          <div id="topping">
-           <h2>Toppings:</h2>
-              <input type="checkbox" name="top" value="1">pepperoni <br>
-              <input type="checkbox" name="top" value="2">cheese <br>
-              <input type="checkbox" name="top" value="3">pineapple <br>
-              <input type="checkbox" name="top" value="4">ham <br>
+           <h3>Toppings</h3>
+           <label class="checkbox-inline">
+              <input type="checkbox" name="top" value="1">pepperoni
+          </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="top" value="2">cheese
+          </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="top" value="3">pineapple
+          </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="top" value="4">ham
+          </label>
           </div>
-<!-- carryout -->
-          <!-- <div id="carryout">
-            <h2>Feeds:</h2>
-             <label class="radio-inline">
-               <input type="radio" name="carry" value="1">pick it up
-             </label>
-              <label class="radio-inline">
-               <input type="radio" name="carry" value="2">delivery
-             </label>
-           </div> -->
-        </div>
+
 <!-- button -->
-        <button type="submit" id="order" class="button btn-default">Submit</button>
+        <button type="submit" id="order" class="button btn-primary">Get it Started</button>
+        </div>
       </form>
 
 <!-- Order Details -->
-      <div id="orderResult">
-        These are your results
-        <p id="sizes"></p>
-        <p id="toppings"></p>
-        <p id="total"></p>
+      <div class="result">
+        <h3> Your total price for this order is:</h3>
+        <p id="orderResult"></p>
       </div>
+    </div>
     </div>
   </body>
 </html>

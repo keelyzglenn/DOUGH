@@ -2,7 +2,7 @@
 function Order() {
   this.feeds = 0;
   this.topping = 0;
-  this.total = 0;
+  this.total = 5;
   this.priceSize = 0;
   this.priceTopping = 0;
 }
@@ -36,30 +36,23 @@ Order.prototype.priceFeed = function() {
 // toppings
 Order.prototype.priceTop = function () {
   this.priceTopping = 1;
-  if (this.topping <= 2) {
+
+  if (this.topping === 1 || this.topping === 2) {
     this.priceTopping += 1;
   };
-  if (this.topping >= 3) {
+  if (this.topping === 3 || this.topping === 4) {
     this.priceTopping += 2;
   };
   return this.priceTopping;
 };
 
 // total cost
-// Order.prototype.totalPrice = function () {
-//   this.total = priceSize + priceTopping;
-// }
+Order.prototype.totalPrice = function () {
+  this.total += this.priceSize + this.priceTopping;
+};
 
-//
-// Order.prototype.priceAll = function () {
-//   total += priceSize + priceTopping;
-// };
-//
-// Order.prototype.clearPrice = function () {
-//   this.feeds = 0;
-//   this.priceSize = 0;
-// }
-//
+
+
 // frontend
 $(document).ready(function() {
   $("#form").submit(function(event) {
@@ -72,13 +65,13 @@ $(document).ready(function() {
      pizza.topping++;
    });
 
-   pizza.priceFeed()
+   pizza.priceFeed();
    pizza.priceTop();
+   pizza.totalPrice();
 
-  $("#sizes").text(pizza.priceSize);
-  $("#toppings").text(pizza.priceTopping);
-  // $("#total").text(pizza.totalPrice());
+   $("#form").toggle();
+   $(".result").toggle();
+
+  $("#orderResult").text(pizza.total);
   });
 });
-
-//
