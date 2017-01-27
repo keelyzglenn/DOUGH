@@ -21,7 +21,10 @@
   color: black;
 }
 
-/*index*/
+
+
+
+/*INDEX*/
 .imageOne {
   background-image: url("../img/one.jpg");
   background-repeat: no-repeat;
@@ -52,13 +55,62 @@
 }
 
 
+/*ABOUT US*/
+
+.jumbotron {
+  opacity: .9;
+  background: url("../img/eight.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  height: 250px;
+  border-radius: 0px;
+}
+.jumbotron h1 {
+  opacity: 1;
+  color: #F7F7F7;
+  text-align: right;
+  margin-top: 140px;
+}
+
+.short {
+  text-align: center;
+  color: tan;
+}
+#chef {
+  width: 400px;
+}
+
+.history {
+  margin-top: 50px;
+}
+
+.history h3 {
+  text-align: center;
+}
+
+.about {
+  text-align: left;
+}
+
+.social {
+  text-align: center;
+  margin-top: 50px;
+}
+.smaller {
+  height: 10%;
+  width: 10%;
+  margin: 40px;
+}
+
 /*ORDER ONLINE*/
 .order {
   background-image: url("../img/cutting.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 800px;
+  width: 750px;
   height: 550px;
 }
 
