@@ -6,7 +6,7 @@ function Order() {
 }
 
 var pizza = new Order();
-var toppingCount = 0;
+
 
 // size
 Order.prototype.priceFeed = function() {
@@ -33,7 +33,7 @@ Order.prototype.priceFeed = function() {
 
 // toppings
 Order.prototype.priceTop = function () {
-  var priceTopping = 0;
+  var priceTopping = 1;
   if (this.topping <= 2) {
     priceTopping += 1;
   };
@@ -59,9 +59,10 @@ $(document).ready(function() {
     event.preventDefault();
 
     pizza.feeds = parseInt($("input:radio[name=size]:checked").val());
-    pizza.toppings = $("input:checkbox[name=top]:checked").each(function() {
+
+    $("input:checkbox[name=top]:checked").each(function() {
      var toppingType = $(this).val();
-     toppingCount++;
+     pizza.topping++;
    });
 
   $("#sizes").text(pizza.priceFeed());
