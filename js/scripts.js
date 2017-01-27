@@ -19,15 +19,16 @@ var pizza = new Order();
 Order.prototype.priceFeed = function() {
 // size
   if(this.feeds === 1) {
-    this.priceSize += 1;
-  } else if (this.feeds = 2) {
+    this.priceSize + 1;
+  }
+  if (this.feeds === 2) {
     this.priceSize += 2;
-  } else if (this.feeds = 3) {
+  }
+  if (this.feeds === 3) {
     this.priceSize += 3;
-  } else if (this.feeds = 4) {
+  }
+  if (this.feeds === 4) {
     this.priceSize += 4;
-  } else {
-    this.priceSize = 0;
   }
 };
 //
@@ -39,10 +40,10 @@ Order.prototype.priceFeed = function() {
 //     priceTopping += 2;
 //   }
 // };
-
-Order.prototype.priceAll = function () {
-  total += priceSize + priceTopping;
-};
+//
+// Order.prototype.priceAll = function () {
+//   total += priceSize + priceTopping;
+// };
 
 // frontend
 $(document).ready(function() {
