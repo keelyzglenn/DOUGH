@@ -19,18 +19,19 @@ var pizza = new Order();
 Order.prototype.priceFeed = function() {
 // size
   if(this.feeds === 1) {
-    this.priceSize + 1;
+    this.priceSize =+ 1;
   }
   if (this.feeds === 2) {
-    this.priceSize += 2;
+    this.priceSize =+ 2;
   }
   if (this.feeds === 3) {
-    this.priceSize += 3;
+    this.priceSize =+ 3;
   }
   if (this.feeds === 4) {
-    this.priceSize += 4;
+    this.priceSize =+ 4;
   }
 };
+
 //
 // Order.prototype.priceTop = function () {
 // // toppings
@@ -52,6 +53,7 @@ $(document).ready(function() {
 
     pizza.feeds = parseInt($("input:radio[name=size]:checked").val());
     pizza.priceFeed();
+
 
   $("#sizes").text(pizza.feeds);
   $("#toppings").text(pizza.priceSize);
