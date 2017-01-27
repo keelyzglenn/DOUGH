@@ -21,6 +21,16 @@ This webpage demonstrates my ability to combine my four weeks of learning at Epi
 
 ## Pages link
 
+## Specs
+
+* User selects a pizza serving size
+* Price for each size increases on top of a base price
+* User selects pizza toppings
+* Price for number of toppings increase on top of topping base price
+* User inputs personal information for delivery
+* The webpage returns the user the cost of their pizza plus the personal information provided
+* The price of the pizza size is added to the price of the number of toppings to provide a total pizza price
+
 
 ## Legal
 MIT License
