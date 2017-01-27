@@ -23,7 +23,6 @@
 
 
 
-
 /*INDEX*/
 .imageOne {
   background-image: url("../img/one.jpg");
@@ -104,13 +103,14 @@
   margin: 40px;
 }
 
+
 /*ORDER ONLINE*/
 .order {
   background-image: url("../img/cutting.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 750px;
+  width: 800px;
   height: 550px;
 }
 
