@@ -57,6 +57,9 @@ Order.prototype.totalPrice = function () {
 $(document).ready(function() {
   $("#form").submit(function(event) {
     event.preventDefault();
+    var inputtedName = $("input#fullName").val();
+    var inputtedCity = $("input#city").val();
+    var inputtedTime = $("input#time").val();
 
     pizza.feeds = parseInt($("input:radio[name=size]:checked").val());
 
@@ -73,5 +76,8 @@ $(document).ready(function() {
    $(".result").toggle();
 
   $("#orderResult").text(pizza.total);
+  $("#userName").text(inputtedName);
+  $("#userCity").text(inputtedCity);
+  $("#userTime").text(inputtedTime);
   });
 });

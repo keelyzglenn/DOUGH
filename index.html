@@ -12,7 +12,7 @@
 <!-- heading -->
     <div class="row">
       <div class="col-md-2 sidebar">
-        <h1>DOUGH.</h1>
+        <h1>DOUGH</h1>
         <p>HOME</p>
         <p>ABOUT US</p>
         <p>ORDER</p>
@@ -22,10 +22,10 @@
       <div class="col-md-10 order">
       <form id="form">
         <div class="form-group order-form">
-          <h2>Place an Order Online:</h2>
+          <h2>Order Online</h2>
 <!-- size -->
           <div id="size" class="text">
-            <h3>Feeds</h3>
+            <h3>Feed</h3>
              <label class="radio-inline">
                <input type="radio" name="size" value="1">2-4
              </label>
@@ -43,17 +43,32 @@
          <div id="topping">
            <h3>Toppings</h3>
            <label class="checkbox-inline">
-              <input type="checkbox" name="top" value="1">pepperoni
+              <input type="checkbox" name="top" value="1">Pepperoni
           </label>
             <label class="checkbox-inline">
-              <input type="checkbox" name="top" value="2">cheese
+              <input type="checkbox" name="top" value="2">Cheese
           </label>
             <label class="checkbox-inline">
-              <input type="checkbox" name="top" value="3">pineapple
+              <input type="checkbox" name="top" value="3">Pineapple
           </label>
             <label class="checkbox-inline">
-              <input type="checkbox" name="top" value="4">ham
+              <input type="checkbox" name="top" value="4">Ham
           </label>
+          </div>
+
+          <div class="deliveryInfo">
+            <div class="col-xs-4">
+              <label for="fullName">Name</label>
+              <input type="text" class="form-control" id="fullName">
+            </div>
+            <div class="col-xs-4">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city">
+            </div>
+            <div class="col-xs-4">
+              <label for="time">What Time?</label>
+              <input type="text" class="form-control" id="time">
+            </div>
           </div>
 
 <!-- button -->
@@ -64,8 +79,13 @@
 <!-- Order Details -->
       <div class="result">
         <div id="text">
-        <h4> Your total price for this order is:</h4>
+        <h4> Total Due:</h4>
         <p id="orderResult"></p>
+      
+        <h4>For</h4>
+        <p id="userName"></p>
+        <p id="userCity"></p>
+        <p id="userTime"></p>
         </div>
         <button type="button" class="button btn-default">Start New Order</button>
       </div>
