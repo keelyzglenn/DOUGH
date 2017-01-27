@@ -98,4 +98,8 @@ $(document).ready(function() {
   $("#userCity").text(inputtedCity);
   $("#userTime").text(inputtedTime);
   });
+
+  $("#refresh").click(function() {
+     location.reload();
+   });
 });
