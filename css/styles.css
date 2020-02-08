@@ -1,12 +1,10 @@
 /*ALLPAGES*/
-.container {
-  margin: 20px;
-}
+
 .lights{
 display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+ 
 }
 .lamp {
     height: 200px;
