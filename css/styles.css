@@ -9,13 +9,12 @@ display: block;
   width: 40%;
 }
 .lamp {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-style: solid;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 100px;
     margin: 10px;
-    text-align: center;
 }
 
 .lampRed {
