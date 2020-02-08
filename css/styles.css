@@ -12,6 +12,10 @@
 margin: 20px;
 }
 
+.trafficLight{
+margin: 20px;
+}
+
 .lampRed {
     background-color: red;
 }
