@@ -2,158 +2,29 @@
 .container {
   margin: 20px;
 }
-/*icon*/
-.wide-range {
-  height: 50%;
-  width: 50%;
-  margin-left: 25px;
-}
-/*sidebar*/
 
-.sidebar p {
-  text-align: left;
-  margin-top: 30px;
+.lamp {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    margin: 10px;
+    text-align: center;
 }
 
-.sidebar a {
-  color: black;
+.lampRed {
+    background-color: red;
+}
+.lampYellow {
+    background-color: yellow;
 }
 
-
-/*INDEX*/
-.imageOne {
-  background-image: url("../img/one.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 800px;
-  height: 550px;
+.lampYellow2 {
+    background-color: yellow;
 }
-
-.imageTwo {
-  display: none;
-  background-image: url("../img/second.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 800px;
-  height: 550px;
+.lampYellow3 {
+background-color: yellow;
 }
-
-.imageThree {
-  display: none;
-  background-image: url("../img/four.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 800px;
-  height: 550px;
-}
-
-
-/*ABOUT US*/
-
-.jumbotron {
-  opacity: .9;
-  background: url("../img/eight.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 800px;
-  height: 250px;
-  border-radius: 0px;
-}
-
-.jumbotron h1 {
-  opacity: 1;
-  color: #F7F7F7;
-  text-align: right;
-  margin-top: 140px;
-}
-
-.short {
-  text-align: center;
-  color: tan;
-}
-
-#chef {
-  width: 400px;
-}
-
-.history {
-  margin-top: 50px;
-}
-
-.history h3 {
-  text-align: center;
-}
-
-.about {
-  text-align: left;
-}
-
-.social {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.smaller {
-  height: 10%;
-  width: 10%;
-  margin: 40px;
-}
-
-
-/*ORDER ONLINE*/
-.order {
-  background-image: url("../img/cutting.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 800px;
-  height: 550px;
-}
-
-.order-form {
-  background: rgb(54, 25, 25);
-  background: rgba(54, 25, 25, .5);
-  color: #F7F7F7;
-  text-align: center;
-  padding: 10px;
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 2%;
-}
-
-.result {
-  display: none;
-  background: rgb(54, 25, 25);
-  background: rgba(54, 25, 25, .5);
-  color: #F7F7F7;
-  text-align: center;
-  padding: 10px;
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 2%;
-}
-
-.order-form h3 {
-  text-align: left;
-}
-
-.button {
-  margin-top: 50px;
-  margin-left: 500px;
-  font-size: 15px;
-}
-
-.deliveryInfo {
-  margin-top: 40px;
-}
-
-#text {
-  margin: 50px;
-  font-size: 20px;
-}
+.lampGreen {
+    background-color: green;
