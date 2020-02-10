@@ -23,25 +23,25 @@ margin: 20px;
 }
 
 .button{
-margin: 20px;
+margin: 50px;
     width: 400px;
-    height: 60px;
-    text-color: white;
-    background-color: blue;
+    height: 80px;
+    color: white;
+    background-color: #5DADEC;
 }
 
 .lampRed {
     background-color: red;
 }
 .lampYellow {
-    background-color: yellow;
+    background-color: #FAFA37;
 }
 
 .lampYellow2 {
-    background-color: yellow;
+    background-color: #FAFA37;
 }
 .lampYellow3 {
-background-color: yellow;
+background-color: #FAFA37;
 }
 .lampGreen {
     background-color: green;
