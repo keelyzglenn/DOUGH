@@ -1,4 +1,7 @@
 /*ALLPAGES*/
+.container{
+background-color: black;
+}
 
 .lamp {
     height: 200px;
@@ -21,6 +24,8 @@ margin: 20px;
 
 .button{
 margin: 20px;
+    width: 100px;
+    height: 50px;
 }
 
 .lampRed {
